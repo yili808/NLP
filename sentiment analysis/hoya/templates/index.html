@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--
+
+
+
+
+
+                                        code by michelle zhu
+                                        jan 27, 2018
+
+
+
+
+-->
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:300,400,500,600,700|Lato:300,400" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet"/>
+
+<style>
+
+body {
+}
+
+::selection {
+  background:#D5FF3F; 
+}
+
+.page-title {
+    font-family:Montserrat, sans-serif;
+    font-size:40px;
+    color:#2249F7;
+    text-align: center;
+    font-weight:600;
+    letter-spacing:3px;
+}
+
+h1 {
+    text-align: center;
+    font-family:Montserrat;
+    font-size:23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding:20px 0 5px 0;
+    color:#000000;
+    font-weight:normal;
+}
+
+h2 {
+    text-align: center;
+    width:auto;
+    font-family:Montserrat;
+    font-size:18px;
+    padding:0px 0 15px 0;
+    color:#000000;
+    font-weight:normal; 
+    letter-spacing: 2px;
+    text-transform: normal;
+}
+
+h3 {
+    text-align:center;
+    width:auto;
+    font-family:Montserrat;
+    font-size:12px;
+    padding:10px 0 0px 0;
+    color:#000000;
+    font-weight:normal; 
+    letter-spacing: 2px;
+    text-transform: normal;
+}
+
+p {
+    text-align: center;
+    width:auto;
+    font-family:Montserrat;
+    font-size:18px;
+    padding:10px 0 15px 0;
+    color:#000000;
+    font-weight:normal; 
+    letter-spacing: 2px;
+    text-transform: normal;
+
+}
+
+.container {
+    /*border:1px solid black;*/
+    padding-top:100px;
+    width:auto;
+    height:auto;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.form-group {
+    text-align: center;
+    padding:20px 10px 15px 10px;
+}
+
+.paragraph {
+    position:absolute;
+    width:60%;
+    height:auto;
+    line-height:25px;
+    left:50%;
+    top:70%;
+        transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+input[type=text]{
+    display:inline-block;
+    width:60%;
+    border:2px solid #B2B2B2;
+    font-family:Montserrat;
+    color:#000000;
+    font-size:20px;
+    letter-spacing: 2px;
+    padding:10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border:2px solid #000000;
+}
+
+
+.button {
+    margin-top:25px;
+}
+
+input[type=submit] {
+    margin-top:25px;
+    padding:10px 20px 10px 20px;
+    border:1.5px solid black;
+    text-align:center;
+    width:auto;
+    height:auto;
+    font-family:Montserrat;
+    text-transform: uppercase;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing: 2px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B2B2B2;
+  letter-spacing: 2px
+}
+
+#btn:hover {
+    border:1.5px solid #2249F7;
+    color:#2249F7;
+    cursor:pointer;
+
+}
+
+#footer {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    background-color:inherit;
+    height:40px;
+    opacity:0.8;
+    z-index:0;
+}
+
+#credit {
+    position:absolute;
+    background-color:inherit;
+    width:auto;
+    height:auto;
+    padding:3px 3px 3px 5px;
+    display:inline-block;
+    bottom:10px;
+    right:10px;
+    font-family:Montserrat;
+    font-weight:500;
+    font-size:12px; 
+    letter-spacing: 1px;
+    line-height:13px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bottom {
+    position:absolute;
+    background-color:inherit;
+    width:auto;
+    height:auto;
+    padding:3px 3px 3px 5px;
+    display:inline-block;
+    bottom:10px;
+    left:10px;
+    font-family:Montserrat;
+    font-weight:500;
+    font-size:12px; 
+    letter-spacing: 1px;
+    line-height:13px;
+    text-transform: uppercase;
+    text-align: center;  
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    <title>Natural Language Sentiment Predictor</title>
+
+    <div class="container">
+        <div class="page-title">Natural Language Sentiment Predictor</div>
+        <h1>Enter a sentence in English</h1>
+<!--         <h2>Please try to limit typos!</h2> -->
+        <form class="" method="POST" action="http://localhost:5000/sentence">
+            <div class="form-group">
+                    <input class="textbox" type="text" name="sentence" placeholder="Please try to limit typos!">
+            </div>
+            <div style="text-align:center;">
+                <input class="btn btn-primary" id="btn" type="submit" value="submit">
+            </div>
+            <h3>Please wait about 10 seconds for the page to load.</h3>
+
+            <div class="paragraph">
+                <p>The predictor will determine whether your sentence has a positive, negative, or neutral sentiment based on a score between 0 and 1.</p>
+            </div>
+
+        </form>
+
+
+    <div id="footer">
+        <div id="credit">Yi Li, Michelle Zhu & Hui Wang</div>
+        <div class="bottom">Hoya Hacks 2018</div>
+    </div>
+    </div>
+
+</body>
+</html>
